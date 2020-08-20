@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spotify-app</title>
+    <link rel="icon" href="./favicon.ico" type="image/gif" sizes="16x16">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+    
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Spotify</a> 
+          </nav>
+          <div class="row mt-4">
+              <div class="col col-md-6 offset-md-3 jumbotron">
+                <div class="card m-auto"  style="width: 25rem;" >
+                    <img src="assets/music.png" class="card-img-top" width="100px" alt="...">
+                    <div class="card-body">
+                        <strong class="card-text " id="song-name">Song-Name</strong>
+                      <p class="card-text " id="song-description">Lorem ipsum dolor sit amet.</p>
+                      <input type="hidden" value="0" id="current">
+                      <p class="media-controls">
+                          <audio id="my-audio" controls>
+                        <source src="assets/song-a.mp3" type="audio/ogg">
+                      Your browser does not support the audio element.
+                      </audio>
+                      </p>
+                      
+                    <br>
+                      <button class="btn btn-block btn-primary" id="next-song">Next >></button>
+                        
+                    </div>
+                  </div>
+              </div>
+          </div>
+    </div>
+    <script src="assets/main.js"></script>
+    
+</body>
+</html>
