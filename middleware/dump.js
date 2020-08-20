@@ -5,24 +5,25 @@ module.exports = async (req, res, next) => {
     const songs = [
       {
         name: "song-a",
-        description: "song-A description Lorem ipsum dolor sit amet.",
+        description: "Satisfying Tune",
       },
       {
         name: "song-b",
-        description: "song-B description Lorem ipsum dolor sit amet.",
+        description: "Ertugrul Tune",
       },
       {
         name: "song-c",
-        description: "song-C description Lorem ipsum dolor sit amet.",
+        description: "Iphone Tune",
       },
       {
         name: "song-d",
-        description: "song-D description Lorem ipsum dolor sit amet.",
+        description: "BlackBerry Tune",
       },
       {
         name: "song-e",
-        description: "song-E description Lorem ipsum dolor sit amet.",
+        description: "Drama Tune",
       },
+    
     ];
     const count = await Song.find({}).countDocuments();
     console.log("count", count);

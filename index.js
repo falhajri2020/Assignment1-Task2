@@ -13,5 +13,5 @@ app.use(require('./middleware/dump'));
 app.use('/songs',require('./routes/songs'));
 
 
-const PORT= process.env.PORT || 5000;
+const PORT= process.env.PORT || 3000;
 app.listen(PORT,()=>console.log(`listening on PORT ${PORT}`));
